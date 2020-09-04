@@ -1,0 +1,1 @@
+A simple library app created using JavaScript that allows a user to add books to their library and display the contents of their library.
