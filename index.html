@@ -54,36 +54,39 @@
           <div class="box">
             <button class="delete is-pulled-right" id="hide"></button>
 
-            <form id="newForm">
+            <form id="newForm" novalidate>
               <div class="field">
                 <label class="label" for="title">Title</label>
                 <div class="control">
-                  <input class="input" type="text" name="title" id="title">
+                  <input class="input" type="text" name="title" id="title" required>
                 </div>
+                <p class="help"></p>
               </div>
               <div class="field">
                 <label class="label" for="author">Author</label>
                 <div class="control">
-                  <input class="input" type="text" name="author" id="author">
+                  <input class="input" type="text" name="author" id="author" required>
                 </div>
+                <p class="help"></p>
               </div>
               <div class="field">
                 <label class="label" for="pages">Pages</label>
                 <div class="control">
-                  <input class="input" type="number" name="pages" min="1" id="pages">
+                  <input class="input" type="number" name="pages" min="1" id="pages" required>
                 </div>
+                <p class="help"></p>
               </div>
               <div class="field">
                 <label class="label" for="status">Status</label>
                 <div class="control">
                   <div class="select">
                     <select name="status" id="readStatus">
-                      <option value="" disabled selected hidden>Select status</option>
                       <option>To Read</option>
                       <option>Read</option>
                     </select>
                   </div>
                 </div>
+                <p class="help"></p>
               </div>
               <div class="field">
                 <div class="control">
